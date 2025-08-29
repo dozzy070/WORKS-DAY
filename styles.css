@@ -95,7 +95,7 @@ footer a:hover {
 }
 .fill {
     background-color: rgb(189, 178, 133);
-    height: 1300px;
+    height: 1350px;
     padding: 15px 4px 25px 20px;
     text-transform: capitalize;
     color: rgb(180, 27, 27);
@@ -110,11 +110,11 @@ label {
 }
 input {
     margin-top: 8px;
-    width: 90%;
+    width: 95%;
     border-radius: 5px ;
 }
 select {
     margin-top: 8px;
-    width: 90%;
+    width: 95%;
     border-radius: 5px ;
 }
