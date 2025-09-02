@@ -11,124 +11,154 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success p-3 mb-5 fixed-top">
         <div class="container">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Back</a></li>
-            </ul>
+            <a class="navbar-brand fw-bold" href="#">Worker's Day</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto  gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">Help/FAQ</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
+    <br>
+    <br>
 
 
 
 
-    <div class="row justify-content-center rounded-4 m-5">
-        <div class="fill col-md-4">
-            <form class="form-box mt-1 py-3" action="./submit" method="post" enctype="multipart/form-data">
-                <h2 class="mb-3 text-primary fw-bold">Signup:</h2>
 
-                <label for="name">Name:</label>
-                <input type="name" id="name" name="name">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4 mt-5">
+                    <div class="text-center mb-2">
+                        <h3 class="mt-4">Create Account</h3>
+                        <p class="text-muted">SignUp to get Started</p>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" id="username" class="form-control" name="username" placeholder="">
 
-                <label for="usename">Username:</label>
-                <input type="username" id="usename" name="usename">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" name="name" placeholder="">
 
-                <label for="phone number">Phone Number:</label>
-                <input type="text" id="phone number" name="phone number" required placeholder="Enter your phone number">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" name="phone" placeholder="">
 
-                <label for="email">Email:</label>
-                <input class="mb-4" type="email" placeholder="Email" required />
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" name="email" placeholder="">
 
-                <select name="" id="">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-control" name="password" placeholder="">
+
+                            <select name="" id="">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+
+                            <label for="state:">State:</label>
+                            <select name="" id="">
+                                <option value="Abuja">Abuja</option>
+                                <option value="Abia">Abia</option>
+                                <option value="Adamawa">Adamawa</option>
+                                <option value="Akwa Ibom">Akwa Ibom</option>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Bauchi">Bauchi</option>
+                                <option value="Bayelsa">Bayelsa</option>
+                                <option value="Benue">Benue</option>
+                                <option value="Borno">Borno</option>
+                                <option value="Cross River">Cross River</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Ekiti">Ekiti</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="Gombe">Gombe</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Jigawa">Jigawa</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Katsina">Katsina</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Nasarawa">Nasarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Ondo">Ondo</option>
+                                <option value="Osun">Osun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Plateau">Plateau</option>
+                                <option value="Rivers">Rivers</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
+                                <option value="Yobe">Yobe</option>
+                                <option value="Zamfara">Zamfara</option>
+                            </select>
+
+                            <label for="password:">Password:</label>
+                            <input class="mb-4" type="password" placeholder="Create password" required />
+
+                            <label class="mt-1" for="confirm password">Confirm Password:</label>
+                            <input class="mb-4" type="password" placeholder="Confirm password" required />
+
+                            <button class="submit-btn rounded-1">Submit</button>
+                        </form>
+
+                        <div class="mt-5">
+                            <button class="facebook-btn rounded-2 bg-primary text-white"><a href=""></a> Signup with
+                                Facebook</button>
+                            <button class="google-btn rounded-2 bg-primary text-white"><a href=""></a> Signup with
+                                Google</button>
+                        </div>
 
 
-                <label for="favourite color:">State:</label>
-                <select name="" id="">
-                    <option value="Abuja">Abuja</option>
-                    <option value="Abia">Abia</option>
-                    <option value="Adamawa">Adamawa</option>
-                    <option value="Akwa Ibom">Akwa Ibom</option>
-                    <option value="Anambra">Anambra</option>
-                    <option value="Bauchi">Bauchi</option>
-                    <option value="Bayelsa">Bayelsa</option>
-                    <option value="Benue">Benue</option>
-                    <option value="Borno">Borno</option>
-                    <option value="Cross River">Cross River</option>
-                    <option value="Delta">Delta</option>
-                    <option value="Ebonyi">Ebonyi</option>
-                    <option value="Edo">Edo</option>
-                    <option value="Ekiti">Ekiti</option>
-                    <option value="Enugu">Enugu</option>
-                    <option value="Gombe">Gombe</option>
-                    <option value="Imo">Imo</option>
-                    <option value="Jigawa">Jigawa</option>
-                    <option value="Kaduna">Kaduna</option>
-                    <option value="Kano">Kano</option>
-                    <option value="Katsina">Katsina</option>
-                    <option value="Kebbi">Kebbi</option>
-                    <option value="Kogi">Kogi</option>
-                    <option value="Kwara">Kwara</option>
-                    <option value="Lagos">Lagos</option>
-                    <option value="Nasarawa">Nasarawa</option>
-                    <option value="Niger">Niger</option>
-                    <option value="Ogun">Ogun</option>
-                    <option value="Ondo">Ondo</option>
-                    <option value="Osun">Osun</option>
-                    <option value="Oyo">Oyo</option>
-                    <option value="Plateau">Plateau</option>
-                    <option value="Rivers">Rivers</option>
-                    <option value="Sokoto">Sokoto</option>
-                    <option value="Taraba">Taraba</option>
-                    <option value="Yobe">Yobe</option>
-                    <option value="Zamfara">Zamfara</option>
-                </select>
 
-                <label for="password:">Password:</label>
-                <input class="mb-4" type="password" placeholder="Create password" required />
-
-                <label class="mt-1" for="confirm password">Confirm Password:</label>
-                <input class="mb-4" type="password" placeholder="Confirm password" required />
-
-                <button class="submit-btn rounded-1">Submit</button>
-            </form>
-
-            <div class="mt-5">
-                <button class="facebook-btn rounded-2 bg-primary text-white"><a href=""></a> Signup with Facebook</button>
-                <button class="google-btn rounded-2 bg-primary text-white"><a href=""></a> Signup with Google</button>
-            </div>
-            
-
-
-            <hr class="mt-5 text-dark">
+                        <hr class="mt-5 text-dark">
 
 
 
-            <form class="form-box mt-5">
-                <h2 class="mb-3 text-primary fw-bold">Login:</h2>
 
-                <label for="email:">Email:</label>
-                <input class="mb-1" type="email" placeholder="Email" required />
+                        <form class="form-box mt-5">
+                            <h2 class="mb-3 text-primary fw-bold">Login:</h2>
 
-                <label for="password:">Password:</label>
-                <input class="mb-4" type="password" placeholder="Password" required />
+                            <label for="email:">Email:</label>
+                            <input class="mb-1" type="email" placeholder="Email" required />
 
-                <a href="#" class="forgot-password mt-4 text-primary">Forgot password?</a>
-                <br>
-                <br>
-                <button class="submit-btn rounded-1">Submit</button>
-            </form>
+                            <label for="password:">Password:</label>
+                            <input class="mb-4" type="password" placeholder="Password" required />
 
-            <div class="mt-5">
-                <button class="facebook-btn rounded-2 bg-primary text-white"><a href=""></a> Login with
-                    Facebook</button>
-                <button class="google-btn rounded-2 bg-primary text-white"><a href=""></a> Login with Google</button>
+                            <button class="submit-btn rounded-1">Submit</button>
+
+                            <a href="#" class="forgot-password mt-4 text-primary">Forgot password?</a>
+                            <br>
+                            <br>
+                        </form>
+
+                        <div class="mt-5">
+                            <button class="facebook-btn rounded-2 bg-primary text-white"><a href=""></a> Login with
+                                Facebook</button>
+                            <button class="google-btn rounded-2 bg-primary text-white"><a href=""></a> Login with
+                                Google</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <br>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
