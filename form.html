@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-success p-3 mb-5 fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Worker's Day</a>
@@ -28,137 +27,150 @@
             </div>
         </div>
     </nav>
-
     <br>
     <br>
-
-
-
-
 
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card p-4 mt-5">
-                    <div class="text-center mb-2">
-                        <h3 class="mt-4">Create Account</h3>
-                        <p class="text-muted">SignUp to get Started</p>
+                <div class="card p-4">
+
+                    <div class="card-header">
+                        <h3>Create Account</h3>
+                        <p class="text-muted">Sign up to get started</p>
                     </div>
+
                     <div class="card-body">
-                        <form action="">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" id="username" class="form-control" name="username" placeholder="">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Full Name:</label>
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form- fw-bold">Email Address:</label>
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Phone Number:</label>
+                                <input type="tel" class="form-control" placeholder="Enter your phone number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dob" class="form-label fw-bold">Date of Birth:</label>
+                                <input type="date" id="dob" name="dob" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label d-block fw-bold">Gender:</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male"
+                                        required>
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female"
+                                        value="female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                                    <label class="form-check-label" for="other">Other</label>
+                                </div>
+                            </div>
 
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" class="form-control" name="name" placeholder="">
-
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" name="phone" placeholder="">
-
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" class="form-control" name="email" placeholder="">
-
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" id="password" class="form-control" name="password" placeholder="">
-
-                            <select name="" id="">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
+                            <label for="state" class="form-label">State:</label>
+                            <select name="" id="select-state">
+                                <option value="Abuja" class="form-control">Abuja</option>
+                                <option value="Abia" class="form-control">Abia</option>
+                                <option value="Adamawa" class="form-control">Adamawa</option>
+                                <option value="Akwa Ibom" class="form-control">Akwa Ibom</option>
+                                <option value="Anambra" class="form-control">Anambra</option>
+                                <option value="Bauchi" class="form-control">Bauchi</option>
+                                <option value="Bayelsa" class="form-control">Bayelsa</option>
+                                <option value="Benue" class="form-control">Benue</option>
+                                <option value="Borno" class="form-control">Borno</option>
+                                <option value="Cross River" class="form-control">Cross River</option>
+                                <option value="Delta" class="form-control">Delta</option>
+                                <option value="Ebonyi" class="form-control">Ebonyi</option>
+                                <option value="Edo" class="form-control">Edo</option>
+                                <option value="Ekiti" class="form-control">Ekiti</option>
+                                <option value="Enugu" class="form-control">Enugu</option>
+                                <option value="Gombe" class="form-control">Gombe</option>
+                                <option value="Imo" class="form-control">Imo</option>
+                                <option value="Jigawa" class="form-control">Jigawa</option>
+                                <option value="Kaduna" class="form-control">Kaduna</option>
+                                <option value="Kano" class="form-control">Kano</option>
+                                <option value="Katsina" class="form-control">Katsina</option>
+                                <option value="Kebbi" class="form-control">Kebbi</option>
+                                <option value="Kogi" class="form-control">Kogi</option>
+                                <option value="Kwara" class="form-control">Kwara</option>
+                                <option value="Lagos" class="form-control">Lagos</option>
+                                <option value="Nasarawa" class="form-control">Nasarawa</option>
+                                <option value="Niger" class="form-control">Niger</option>
+                                <option value="Ogun" class="form-control">Ogun</option>
+                                <option value="Ondo" class="form-control">Ondo</option>
+                                <option value="Osun" class="form-control">Osun</option>
+                                <option value="Oyo" class="form-control">Oyo</option>
+                                <option value="Plateau" class="form-control">Plateau</option>
+                                <option value="Rivers" class="form-control">Rivers</option>
+                                <option value="Sokoto" class="form-control">Sokoto</option>
+                                <option value="Taraba" class="form-control">Taraba</option>
+                                <option value="Yobe" class="form-control">Yobe</option>
+                                <option value="Zamfara" class="form-control">Zamfara</option>
                             </select>
 
-                            <label for="state:">State:</label>
-                            <select name="" id="">
-                                <option value="Abuja">Abuja</option>
-                                <option value="Abia">Abia</option>
-                                <option value="Adamawa">Adamawa</option>
-                                <option value="Akwa Ibom">Akwa Ibom</option>
-                                <option value="Anambra">Anambra</option>
-                                <option value="Bauchi">Bauchi</option>
-                                <option value="Bayelsa">Bayelsa</option>
-                                <option value="Benue">Benue</option>
-                                <option value="Borno">Borno</option>
-                                <option value="Cross River">Cross River</option>
-                                <option value="Delta">Delta</option>
-                                <option value="Ebonyi">Ebonyi</option>
-                                <option value="Edo">Edo</option>
-                                <option value="Ekiti">Ekiti</option>
-                                <option value="Enugu">Enugu</option>
-                                <option value="Gombe">Gombe</option>
-                                <option value="Imo">Imo</option>
-                                <option value="Jigawa">Jigawa</option>
-                                <option value="Kaduna">Kaduna</option>
-                                <option value="Kano">Kano</option>
-                                <option value="Katsina">Katsina</option>
-                                <option value="Kebbi">Kebbi</option>
-                                <option value="Kogi">Kogi</option>
-                                <option value="Kwara">Kwara</option>
-                                <option value="Lagos">Lagos</option>
-                                <option value="Nasarawa">Nasarawa</option>
-                                <option value="Niger">Niger</option>
-                                <option value="Ogun">Ogun</option>
-                                <option value="Ondo">Ondo</option>
-                                <option value="Osun">Osun</option>
-                                <option value="Oyo">Oyo</option>
-                                <option value="Plateau">Plateau</option>
-                                <option value="Rivers">Rivers</option>
-                                <option value="Sokoto">Sokoto</option>
-                                <option value="Taraba">Taraba</option>
-                                <option value="Yobe">Yobe</option>
-                                <option value="Zamfara">Zamfara</option>
-                            </select>
-
-                            <label for="password:">Password:</label>
-                            <input class="mb-4" type="password" placeholder="Create password" required />
-
-                            <label class="mt-1" for="confirm password">Confirm Password:</label>
-                            <input class="mb-4" type="password" placeholder="Confirm password" required />
-
-                            <button class="submit-btn rounded-1">Submit</button>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Password:</label>
+                                <input type="password" class="form-control" placeholder="Create a password">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Confirm Password:</label>
+                                <input type="password" class="form-control" placeholder="Confirm your password">
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-custom">Sign Up</button>
+                            </div>
                         </form>
-
-                        <div class="mt-5">
-                            <button class="facebook-btn rounded-2 bg-primary text-white"><a href=""></a> Signup with
-                                Facebook</button>
-                            <button class="google-btn rounded-2 bg-primary text-white"><a href=""></a> Signup with
-                                Google</button>
-                        </div>
-
-
-
-                        <hr class="mt-5 text-dark">
+                    </div>
+                    <div class="text-center mt-3">
+                        <small>Already have an account? <a href="login.html">Login</a></small>
+                    </div>
 
 
 
 
-                        <form class="form-box mt-5">
-                            <h2 class="mb-3 text-primary fw-bold">Login:</h2>
 
-                            <label for="email:">Email:</label>
-                            <input class="mb-1" type="email" placeholder="Email" required />
 
-                            <label for="password:">Password:</label>
-                            <input class="mb-4" type="password" placeholder="Password" required />
 
-                            <button class="submit-btn rounded-1">Submit</button>
 
-                            <a href="#" class="forgot-password mt-4 text-primary">Forgot password?</a>
-                            <br>
-                            <br>
+                    <div class="card-header">
+                        <h3>Login Account</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Email Address:</label>
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Password:</label>
+                                <input type="password" class="form-control" placeholder="Enter your password">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Confirm Password:</label>
+                                <input type="password" class="form-control" placeholder="Confirm your password">
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-custom">Login</button>
+                            </div>
                         </form>
-
-                        <div class="mt-5">
-                            <button class="facebook-btn rounded-2 bg-primary text-white"><a href=""></a> Login with
-                                Facebook</button>
-                            <button class="google-btn rounded-2 bg-primary text-white"><a href=""></a> Login with
-                                Google</button>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
